@@ -9,6 +9,8 @@ find_package(Boost REQUIRED COMPONENTS system thread locale random)
 set (etcd-cpp-api_VERSION_MAJOR 0)
 set (etcd-cpp-api_VERSION_MINOR 1)
 
+set(CATCH_INCLUDE_DIR ${CMAKE_CURRENT_LIST_DIR})
+
 enable_testing()
 include_directories(SYSTEM ${CPPREST_INCLUDE_DIR} ${Boost_INCLUDE_DIR})
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
