@@ -11,7 +11,7 @@ set (etcd-cpp-api_VERSION_MINOR 1)
 
 set(CATCH_INCLUDE_DIR ${CMAKE_CURRENT_LIST_DIR})
 
-set(CXX_CLANG_TIDY "")
+set(CMAKE_CXX_CLANG_TIDY "")
 
 enable_testing()
 include_directories(SYSTEM ${CPPREST_INCLUDE_DIR} ${Boost_INCLUDE_DIR})
